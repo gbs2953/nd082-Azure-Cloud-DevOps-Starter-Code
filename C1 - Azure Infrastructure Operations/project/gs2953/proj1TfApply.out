@@ -1,0 +1,48 @@
+[0m[1mazurerm_network_security_group.udacityProject1: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkSecurityGroups/UdacityProject1-nsg][0m[0m
+[0m[1mazurerm_managed_disk.udacityProject1[1]: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk1][0m[0m
+[0m[1mazurerm_network_interface.udacityProject1[1]: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic1][0m[0m
+[0m[1mazurerm_public_ip.udacityProject1: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/publicIPAddresses/UdacityProject1-pip][0m[0m
+[0m[1mazurerm_managed_disk.udacityProject1[0]: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk0][0m[0m
+[0m[1mazurerm_network_interface.udacityProject1[0]: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic0][0m[0m
+[0m[1mazurerm_availability_set.udacityProject1: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/availabilitySets/UdacityProject1-avset][0m[0m
+[0m[1mazurerm_virtual_network.udacityProject1: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/virtualNetworks/UdacityProject1-vnet][0m[0m
+[0m[1mazurerm_availability_set.udacityProject1: Modifications complete after 1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/availabilitySets/UdacityProject1-avset][0m[0m
+[0m[1mazurerm_network_security_group.udacityProject1: Modifications complete after 1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkSecurityGroups/UdacityProject1-nsg][0m[0m
+[0m[1mazurerm_network_interface.udacityProject1[0]: Modifications complete after 1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic0][0m[0m
+[0m[1mazurerm_network_interface.udacityProject1[1]: Modifications complete after 1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic1][0m[0m
+[0m[1mazurerm_public_ip.udacityProject1: Modifications complete after 1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/publicIPAddresses/UdacityProject1-pip][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm0][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm1][0m[0m
+[0m[1mazurerm_lb.udacityProject1: Modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/loadBalancers/UdacityProject1-lb][0m[0m
+[0m[1mazurerm_virtual_network.udacityProject1: Modifications complete after 2s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/virtualNetworks/UdacityProject1-vnet][0m[0m
+[0m[1mazurerm_lb.udacityProject1: Modifications complete after 0s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/loadBalancers/UdacityProject1-lb][0m[0m
+[0m[1mazurerm_managed_disk.udacityProject1[1]: Modifications complete after 3s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk1][0m[0m
+[0m[1mazurerm_managed_disk.udacityProject1[0]: Modifications complete after 3s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk0][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 10s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 10s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 20s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 20s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 30s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 30s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 40s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 40s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 50s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 50s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 1m0s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 1m0s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[0]: Modifications complete after 1m1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm0][0m[0m
+[0m[1mazurerm_virtual_machine.udacityProject1[1]: Modifications complete after 1m1s [id=/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm1][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 0 added, 11 changed, 0 destroyed.[0m
+[0m
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate[0m
+[0m[1m[32m
+Outputs:
+
+azurerm_public_ip = "52.162.179.219"
+packer_image = "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/images/Proj1PackerImage"[0m
