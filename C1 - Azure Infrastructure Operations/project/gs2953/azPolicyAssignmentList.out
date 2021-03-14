@@ -1,0 +1,75 @@
+[
+  {
+    "description": null,
+    "displayName": "Audit existing Linux VMs that use password for SSH authentication Assignment",
+    "enforcementMode": "Default",
+    "id": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/providers/Microsoft.Authorization/policyAssignments/audit-existing-linux-vm-ssh-with-password-assignment",
+    "identity": null,
+    "location": null,
+    "metadata": {
+      "createdBy": "df80d2bf-0efd-4aa5-a318-b7ca42efb17a",
+      "createdOn": "2020-11-15T05:08:12.4809973Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "name": "audit-existing-linux-vm-ssh-with-password-assignment",
+    "notScopes": null,
+    "parameters": null,
+    "policyDefinitionId": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/providers/Microsoft.Authorization/policyDefinitions/audit-existing-linux-vm-ssh-with-password",
+    "scope": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab",
+    "sku": {
+      "name": "A0",
+      "tier": "Free"
+    },
+    "type": "Microsoft.Authorization/policyAssignments"
+  },
+  {
+    "description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
+    "displayName": "ASC Default (subscription: b3a912ab-5065-4d4c-aa34-d0f7d5d23aab)",
+    "enforcementMode": "Default",
+    "id": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+    "identity": null,
+    "location": null,
+    "metadata": {
+      "assignedBy": "Security Center",
+      "createdBy": "c9f72300-5adb-44e4-b00a-0cc98a6314b9",
+      "createdOn": "2020-07-12T20:27:39.2048471Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "name": "SecurityCenterBuiltIn",
+    "notScopes": null,
+    "parameters": {},
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+    "scope": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab",
+    "sku": {
+      "name": "A1",
+      "tier": "Standard"
+    },
+    "type": "Microsoft.Authorization/policyAssignments"
+  },
+  {
+    "description": null,
+    "displayName": "Deny any indexed resources that do not any tags associated with the resource",
+    "enforcementMode": "Default",
+    "id": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/providers/Microsoft.Authorization/policyAssignments/tagging-policy",
+    "identity": null,
+    "location": null,
+    "metadata": {
+      "createdBy": "df80d2bf-0efd-4aa5-a318-b7ca42efb17a",
+      "createdOn": "2020-12-24T03:08:11.3929884Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "name": "tagging-policy",
+    "notScopes": null,
+    "parameters": null,
+    "policyDefinitionId": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab/providers/Microsoft.Authorization/policyDefinitions/Deny-indexed-resources-without-tags",
+    "scope": "/subscriptions/b3a912ab-5065-4d4c-aa34-d0f7d5d23aab",
+    "sku": {
+      "name": "A0",
+      "tier": "Free"
+    },
+    "type": "Microsoft.Authorization/policyAssignments"
+  }
+]
