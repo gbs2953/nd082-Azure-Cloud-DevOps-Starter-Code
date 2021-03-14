@@ -63,9 +63,17 @@ This project allows the user to:
         + sets an 'author' tag to my name.
 
 ### Outputs
-Subscription ID represented as: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
-Output of packer build CLI command (Subscription ID altered):
-============================================================================
+=================================================
+- Output of terraform apply:
+=================================================
+Outputs:
+
+azurerm_public_ip = "52.162.179.219"
+packer_image = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/images/Proj1PackerImage"[0m
+=================================================
+- Output of packer build CLI command (Subscription ID altered):
+(Subscription ID represented as: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee")
+=================================================
 [1;32mazure-arm: output will be in this color.[0m
 
 [1;32m==> azure-arm: Running builder ...[0m
@@ -129,133 +137,4 @@ ManagedImageName: Proj1PackerImage
 ManagedImageId: /subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/images/Proj1PackerImage
 ManagedImageLocation: North Central US
 
-============================================================================
-Output of "az policy assignment list" CLI command (Subscription ID altered):
-============================================================================
-[
-  {
-    "description": null,
-    "displayName": "Audit existing Linux VMs that use password for SSH authentication Assignment",
-    "enforcementMode": "Default",
-    "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Authorization/policyAssignments/audit-existing-linux-vm-ssh-with-password-assignment",
-    "identity": null,
-    "location": null,
-    "metadata": {
-      "createdBy": "df80d2bf-0efd-4aa5-a318-b7ca42efb17a",
-      "createdOn": "2020-11-15T05:08:12.4809973Z",
-      "updatedBy": null,
-      "updatedOn": null
-    },
-    "name": "audit-existing-linux-vm-ssh-with-password-assignment",
-    "notScopes": null,
-    "parameters": null,
-    "policyDefinitionId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Authorization/policyDefinitions/audit-existing-linux-vm-ssh-with-password",
-    "scope": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "sku": {
-      "name": "A0",
-      "tier": "Free"
-    },
-    "type": "Microsoft.Authorization/policyAssignments"
-  },
-  {
-    "description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
-    "displayName": "ASC Default (subscription: aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee)",
-    "enforcementMode": "Default",
-    "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
-    "identity": null,
-    "location": null,
-    "metadata": {
-      "assignedBy": "Security Center",
-      "createdBy": "c9f72300-5adb-44e4-b00a-0cc98a6314b9",
-      "createdOn": "2020-07-12T20:27:39.2048471Z",
-      "updatedBy": null,
-      "updatedOn": null
-    },
-    "name": "SecurityCenterBuiltIn",
-    "notScopes": null,
-    "parameters": {},
-    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
-    "scope": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "sku": {
-      "name": "A1",
-      "tier": "Standard"
-    },
-    "type": "Microsoft.Authorization/policyAssignments"
-  },
-  {
-    "description": null,
-    "displayName": "Deny any indexed resources that do not any tags associated with the resource",
-    "enforcementMode": "Default",
-    "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Authorization/policyAssignments/tagging-policy",
-    "identity": null,
-    "location": null,
-    "metadata": {
-      "createdBy": "df80d2bf-0efd-4aa5-a318-b7ca42efb17a",
-      "createdOn": "2020-12-24T03:08:11.3929884Z",
-      "updatedBy": null,
-      "updatedOn": null
-    },
-    "name": "tagging-policy",
-    "notScopes": null,
-    "parameters": null,
-    "policyDefinitionId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Authorization/policyDefinitions/Deny-indexed-resources-without-tags",
-    "scope": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "sku": {
-      "name": "A0",
-      "tier": "Free"
-    },
-    "type": "Microsoft.Authorization/policyAssignments"
-  }
-]
-============================================================================
-Output of terraform apply ... command (Subscription ID altered):
-============================================================================
-[0m[1mazurerm_network_security_group.udacityProject1: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkSecurityGroups/UdacityProject1-nsg][0m[0m
-[0m[1mazurerm_managed_disk.udacityProject1[1]: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk1][0m[0m
-[0m[1mazurerm_network_interface.udacityProject1[1]: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic1][0m[0m
-[0m[1mazurerm_public_ip.udacityProject1: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/publicIPAddresses/UdacityProject1-pip][0m[0m
-[0m[1mazurerm_managed_disk.udacityProject1[0]: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk0][0m[0m
-[0m[1mazurerm_network_interface.udacityProject1[0]: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic0][0m[0m
-[0m[1mazurerm_availability_set.udacityProject1: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/availabilitySets/UdacityProject1-avset][0m[0m
-[0m[1mazurerm_virtual_network.udacityProject1: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/virtualNetworks/UdacityProject1-vnet][0m[0m
-[0m[1mazurerm_availability_set.udacityProject1: Modifications complete after 1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/availabilitySets/UdacityProject1-avset][0m[0m
-[0m[1mazurerm_network_security_group.udacityProject1: Modifications complete after 1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkSecurityGroups/UdacityProject1-nsg][0m[0m
-[0m[1mazurerm_network_interface.udacityProject1[0]: Modifications complete after 1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic0][0m[0m
-[0m[1mazurerm_network_interface.udacityProject1[1]: Modifications complete after 1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/networkInterfaces/UdacityProject1-nic1][0m[0m
-[0m[1mazurerm_public_ip.udacityProject1: Modifications complete after 1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/publicIPAddresses/UdacityProject1-pip][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm0][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm1][0m[0m
-[0m[1mazurerm_lb.udacityProject1: Modifying... [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/loadBalancers/UdacityProject1-lb][0m[0m
-[0m[1mazurerm_virtual_network.udacityProject1: Modifications complete after 2s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/virtualNetworks/UdacityProject1-vnet][0m[0m
-[0m[1mazurerm_lb.udacityProject1: Modifications complete after 0s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Network/loadBalancers/UdacityProject1-lb][0m[0m
-[0m[1mazurerm_managed_disk.udacityProject1[1]: Modifications complete after 3s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk1][0m[0m
-[0m[1mazurerm_managed_disk.udacityProject1[0]: Modifications complete after 3s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/disks/UdacityProject1-managed-disk0][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 10s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 10s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 20s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 20s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 30s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 30s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 40s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 40s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 50s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 50s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm0, 1m0s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Still modifying... [id=/subscriptions/b3a912ab-5065-4d4c-aa34-...te/virtualMachines/UdacityProject1-vm1, 1m0s elapsed][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[0]: Modifications complete after 1m1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm0][0m[0m
-[0m[1mazurerm_virtual_machine.udacityProject1[1]: Modifications complete after 1m1s [id=/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/virtualMachines/UdacityProject1-vm1][0m[0m
-[0m[1m[32m
-Apply complete! Resources: 0 added, 11 changed, 0 destroyed.[0m
-[0m
-The state of your infrastructure has been saved to the path
-below. This state is required to modify and destroy your
-infrastructure, so keep it safe. To inspect the complete state
-use the `terraform show` command.
-
-State path: terraform.tfstate[0m
-[0m[1m[32m
-Outputs:
-
-azurerm_public_ip = "52.162.179.219"
-packer_image = "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/UdacityProject1-RG/providers/Microsoft.Compute/images/Proj1PackerImage"[0m
-============================================================================
+=================================================
